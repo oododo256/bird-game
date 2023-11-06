@@ -1,7 +1,7 @@
 info.onCountdownEnd(function () {
     game.splash("Your Score: ", info.score())
     info.setScore(0)
-    info.startCountdown(5)
+    info.startCountdown(30)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
     info.changeScoreBy(1)
@@ -20,4 +20,4 @@ coin1.setBounceOnWall(true)
 coin2.setBounceOnWall(true)
 coin3.setBounceOnWall(true)
 coin4.setBounceOnWall(true)
-info.startCountdown(5)
+info.startCountdown(30)
